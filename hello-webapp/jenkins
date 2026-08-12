@@ -1,0 +1,24 @@
+pipeline
+{
+agent any
+parameter{
+ choices(
+   
+)
+}
+  stages{
+    stage('checkout')
+   {
+  repoURL=""
+}
+        
+}
+stage('build')
+{
+}
+stage('deployment')
+{
+
+}
+}
+}
