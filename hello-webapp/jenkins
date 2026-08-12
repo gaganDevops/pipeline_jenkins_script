@@ -9,12 +9,13 @@ parameter{
   stages{
     stage('checkout')
    {
-  repoURL=""
+  repoURL="https://github.com/gaganDevops/pipeline_jenkins_script.git"
 }
         
 }
 stage('build')
 {
+sh mvn clean package
 }
 stage('deployment')
 {
