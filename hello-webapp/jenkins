@@ -22,11 +22,14 @@ dir('hello-webapp')
 {
 sh 'mvn clean package'
 }
-}
 echo ("build successfull")
+}
 }
 stage('deployment')
 {
-
+steps {
+echo ("deployment is pending")
+}
+}
 }
 }
