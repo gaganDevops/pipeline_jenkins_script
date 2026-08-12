@@ -12,7 +12,9 @@ booleanParam(name: 'DEPLOY')
     stage('checkout')
    {
 steps {
-  repoURL="https://github.com/gaganDevops/pipeline_jenkins_script.git"
+script{
+  def repoURL="https://github.com/gaganDevops/pipeline_jenkins_script.git"
+}
 }
 }
 stage('build')
