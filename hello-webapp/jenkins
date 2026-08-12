@@ -11,18 +11,19 @@ booleanParam(name: 'DEPLOY')
   stages{
     stage('checkout')
    {
-step{
+steps {
   repoURL="https://github.com/gaganDevops/pipeline_jenkins_script.git"
 }
 }
 stage('build')
 {
-step{
+steps {
 dir('hello-webapp')
 {
-sh mvn clean package
+sh 'mvn clean package'
 }
 }
+echo ("build successfull")
 }
 stage('deployment')
 {
