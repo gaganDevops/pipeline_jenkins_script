@@ -30,6 +30,9 @@ echo ("build successfull")
 stage('deployment')
 {
 steps {
+sh '''
+        cp /var/lib/jenkins/workspace/pipeline_jenkins_script/hello-webapp/target/hello-webapp.war /opt/tomcat/webapps/
+   '''
 echo ("deployment is pending")
 }
 }
