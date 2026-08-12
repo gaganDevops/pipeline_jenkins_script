@@ -2,24 +2,28 @@ pipeline
 {
 agent any
 parameter{
- choices(
-   
+ choice(
+   choices:['Retail','corpprate']
 )
 }
   stages{
     stage('checkout')
    {
+step{
   repoURL="https://github.com/gaganDevops/pipeline_jenkins_script.git"
 }
-        
 }
 stage('build')
 {
+step{
+dir('hello-webapp')
+{
 sh mvn clean package
+}
+}
 }
 stage('deployment')
 {
 
-}
 }
 }
