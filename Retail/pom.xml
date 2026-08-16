@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gagan.demo</groupId>
-    <artifactId>hello-webapp</artifactId>
+    <artifactId>retail</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>Hello WebApp</name>
+    <name>retail</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,7 +18,7 @@
     </properties>
 
     <build>
-        <finalName>hello-webapp</finalName>
+        <finalName>retail</finalName>
 
         <plugins>
             <plugin>
