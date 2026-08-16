@@ -6,11 +6,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gagan.demo</groupId>
-    <artifactId>retail</artifactId>
+    <artifactId>Retail</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>retail</name>
+    <name>Retail</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -18,7 +18,7 @@
     </properties>
 
     <build>
-        <finalName>retail</finalName>
+        <finalName>Retail</finalName>
 
         <plugins>
             <plugin>
