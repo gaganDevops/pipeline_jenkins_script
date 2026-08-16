@@ -6,7 +6,7 @@ pipeline {
 
         choice(
             name: 'APPLICATION',
-            choices: ['retail', 'Corporate'],
+            choices: ['Retail', 'Corporate'],
             description: 'Select Application'
         )
     }
