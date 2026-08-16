@@ -10,7 +10,7 @@ body{font-family:Arial;margin:40px;background:#f4f4f4}
 </head>
 <body>
 <div class="card">
-<h1>🎉 Hello Gagan!</h1>
+<h1>🎉 Hello Retail!</h1>
 <h2>Deployment Successful</h2>
 <p>This application was deployed using <b>Jenkins + GitHub + Apache Tomcat</b>.</p>
 <p>If you can see this page, your CI/CD pipeline is working.</p>
