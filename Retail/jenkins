@@ -1,1 +1,37 @@
-
+pipeline{
+agent any
+ parameters {
+choices{
+ Name:Application,
+ choice:['retail','Corporate']
+}
+  }
+options{
+timeout(10, unites:minutes),
+concurrent
+retry(2)
+}
+stages{
+  stage('checkout'){
+def repoURL="https://github.com/gaganDevops/pipeline_jenkins_script.git"
+}
+}
+stage('build')
+{
+directory(params.$Application){
+mvn clean package
+}
+}
+stage('deploy'){
+ script{
+}
+}
+post{
+success{
+echo "deployment has been completed"
+}
+failure{
+echo "deployment has been completed"
+}
+}
+}
