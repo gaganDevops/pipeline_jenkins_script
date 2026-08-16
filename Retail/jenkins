@@ -58,7 +58,9 @@ pipeline {
                 script {
 
                     echo "Deploying ${params.APPLICATION}"
-
+     ssh '''
+sudo cp Retail/target/retail.war /opt/tomcat/webapps/
+'''
                     // Deployment command will come here
                     // sh './deploy.sh'
                 }
